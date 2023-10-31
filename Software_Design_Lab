@@ -1,0 +1,35 @@
+1. 
+
+Coupling refers to the relationship between modules in a software program. High coupling means that modules are highly dependent on each other and a change in one module will highly impact the dependent module(s). The opposite scenario can be said for low coupling. 
+
+Cohesion describes how many parts of a module work together with other modules to accomplish a common goal within a software program. If there exists high cohesion between modules it means that these modules are closely related and focus together on accomplishing the same goal. The opposite scenario can be said for low cohesion. The goal within a software program should be clearly defined in order to define the cohesion accurately. 
+
+2.
+
+These processes describe the design using which you approach creating software. If the software is being implemented from scratch it is important to focus on the roadmap the implementation cycle will follow as well as the used interfaces, structures and interaction. This outlook on the design of the software is described by a top-down approach. In the case of building upon created code by expanding it into a larger system, or altering individual parts, it is important to apply the bottom-up approach and focus solemnly on small problems constituting to arrive at a final solution. 
+
+Functional oriented design is described by a bottom-up approach as in this case you would first identify the small components existing within a system (functions) and then put the components together in attempt to build up a solution/full system. 
+
+3. 
+
+A class diagram would be useful in a top-down approach as here you would be able to structure the system logically by thinking what classes should exist as well as the behaviours they would have. In a bottom-up approach you would have to focus on individual behavbious first which are the smallest part of the system which is hard to do without knowing the classes that will need to exist in the system as a whole. 
+
+4. 
+
+The Four pillars of OOPs: 
+- abstraction
+Abstracting an object's data allows for the separation of its structure and behaviour, making them distinct and easier to understand their function.
+- encapsulation 
+This means to keep all code related to a specific function in one class meaning the function is encapsulated in that function and low cohesion occurs.
+- inheritance
+When this is applied, a parent class passes on properties and behaviours onto a child class which INHERITS from the parent class. 
+- polymorphism
+Polymorphism allow for multiple classes to contain the same named behaviour/methods with a different implementation across different classes. 
+
+5.
+
+The Strategy Pattern is like having a bunch of different ways to do something in a computer program. It lets you pick one of these ways while your program is running, without changing the main part of the program. In object-oriented systems, these different ways are usually kept in separate boxes, and your program can switch between them as needed. It's a way to make your program more flexible and easy to modify.
+
+6.
+
+Considering the software needs to work just as well when buying a coat or ordering takeaway, the payment class/class behaviour needs to function independently from the classes implementing it. For that reason when the payment is called upon, it needs to strongly follow the abstraction OOP pillar and the design the implementation would follow would be from a top-down approach as I think it would be appropriate to first determine the applicable sectors in which the payment system would be used and then think about how they would connect. In this approach, the necessary interaction and interfaces needed to be implemented could be understood before creating the code which would be called upon without high dependence/cohesion on the sector classes calling upon the payment. 
